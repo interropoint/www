@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>prixfixe</title>
+		<meta name="description" content="interropoint makes small software for small projects.">
+		<meta name="author" content="interropoint">
+		<meta name="color-scheme" content="light dark">
+		<meta name="theme-color" content="#f7f7f7" media="(prefers-color-scheme: light)">
+		<meta name="theme-color" content="#181818" media="(prefers-color-scheme: dark)">
+		<meta property="og:title" content="interropoint">
+		<meta property="og:description" content="Small software for small projects.">
+		<style>
+			:root {
+				color-scheme: light dark;
+				--bg: #f7f7f7;
+				--fg: #222;
+				--muted: #666;
+				--hover: #000;
+				--select: aliceblue;
+			}
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--bg: #181818;
+					--fg: #ddd;
+					--muted: #999;
+					--hover: #fff;
+					--select: #2a3a4a;
+				}
+			}
+			@media (prefers-contrast: more) {
+				:root {
+					--muted: var(--fg);
+				}
+			}
+			html {
+				-webkit-text-size-adjust: 100%;
+			}
+			body {
+				margin: 0;
+				min-height: 100vh;
+				min-height: 100dvh;
+				display: grid;
+				place-items: center;
+				background: var(--bg);
+				color: var(--fg);
+				font-family: sans-serif;
+			}
+			main {
+				width: min(100% - 3rem, 50rem);
+				line-height: 1.5;
+			}
+			p {
+				margin: 0;
+			}
+			.byline {
+				margin-top: 0.25rem;
+				color: var(--muted);
+				font-size: 0.9rem;
+			}
+			a {
+				color: inherit;
+				text-decoration: underline;
+				transition: color 200ms, font-weight 200ms;
+			}
+			.brand-link {
+				font-weight: 700;
+			}
+			a:hover,
+			a:focus {
+				color: var(--hover);
+				font-weight: 400;
+			}
+			a:focus-visible {
+				outline: 2px solid;
+				outline-offset: 2px;
+			}
+			::selection {
+				background: var(--select);
+			}
+			@media (prefers-reduced-motion: reduce) {
+				a {
+					transition: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<p><a class="brand-link" href="https://github.com/interropoint" target="_blank" rel="noopener noreferrer">interropoint</a> makes small software for small projects.</p>
+		</main>
+	</body>
+</html>
